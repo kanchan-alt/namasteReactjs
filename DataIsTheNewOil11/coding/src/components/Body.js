@@ -31,6 +31,7 @@ const Body = ()=> {
             console.log(json);
 
             const mainData = json.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+            console.log(mainData);
 
             setListOfRestaurants(mainData)
             setFilteredRestaurant(mainData)

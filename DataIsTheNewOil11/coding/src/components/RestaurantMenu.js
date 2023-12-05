@@ -12,7 +12,8 @@ const RestaurantMenu = () => {
      const { resId } = useParams();
      
      const resInfo = useRestrauntMenu(resId);
-     const [showIndex, setShowIndex] = useState(0)
+
+     const [showIndex, setShowIndex] = useState(null)
 
     if(resInfo === null) return <Shimmer/>
 
@@ -30,11 +31,7 @@ const RestaurantMenu = () => {
 
     // console.log(categories);
 
-    
-
    
-
-     
 
   return (
    
@@ -49,11 +46,12 @@ const RestaurantMenu = () => {
             categories.map((categorie, index)=>(
               <div>
               
-              <RestaurantCategories key={categorie?.card?.card?.title} data={categorie?.card?.card}
-              showItems = {index === showIndex ? true : false}
-              setShowIndex={()=> setShowIndex(index)}
+                  <RestaurantCategories key={categorie?.card?.card?.title} data={categorie?.card?.card}
+                  showItems = {index === showIndex ? true : false}
+                  setShowIndex={()=> setShowIndex(index)}
+                  setHideIndex = {()=> setShowIndex(null)}
 
-              />
+                  />
 
               </div>
            

@@ -27,9 +27,9 @@ const RestaurantCard = (props) => {
     )
  }
 
- // Higher order component
+ //? Higher order component
 
- // input - RestaurantCard => ResaturantCardPromoted
+ //* input - RestaurantCard => ResaturantCardPromoted
 
  export const withPromtedLabel = (RestaurantCard) => {
  
