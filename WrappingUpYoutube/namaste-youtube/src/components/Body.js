@@ -1,8 +1,15 @@
 import React from 'react'
+import BarSide from './BarSide'
+import MainContainer from './MainContainer'
+
 
 const Body = () => {
   return (
-    <div>Body</div>
+    <div className='flex'>
+      <BarSide/>
+      <MainContainer/>
+      
+    </div>
   )
 }
 
