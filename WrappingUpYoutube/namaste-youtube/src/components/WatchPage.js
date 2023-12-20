@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { closeMenu } from '../utils/appSlice';
 import { useSearchParams } from 'react-router-dom';
+import CommentContainer from './CommentContainer';
 
 const WatchPage = () => {
     const dispatch = useDispatch();
@@ -11,9 +12,10 @@ const WatchPage = () => {
        dispatch(closeMenu());
     },[])
   return (
+    <div className='flex flex-col'>
     <div className='px-2'>
         <iframe 
-            width="1130" 
+            width="930" 
             height="600" 
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
             title="YouTube video player" 
@@ -23,6 +25,10 @@ const WatchPage = () => {
          </iframe>
 
 
+
+    </div>
+    <CommentContainer/>
+   
 
     </div>
   )
