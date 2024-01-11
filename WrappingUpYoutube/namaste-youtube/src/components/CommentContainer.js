@@ -3,7 +3,7 @@ import React from 'react'
 
 const commentsData = [{
     name:"kanchan",
-    text:"Kohli was ranked number one in the ICC rankings for ODI batsmen. In 2018, he was ranked top Test batsman, making him the only Indian ",
+    text:"Kohli was ranked number one in the ICC rankings for ODI batsmen.  ",
     replies:[]
 },
 {

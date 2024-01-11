@@ -23,7 +23,7 @@ const Head = () => {
  
 
   useEffect(()=> {
-    console.log(searchQuery);
+    // console.log(searchQuery);
     // const timer = setTimeout(()=> getSearchSuggestion(),200)
 
     const timer = setTimeout(()=>{
@@ -60,10 +60,10 @@ const Head = () => {
   },[searchQuery])
 
   const getSearchSuggestion = async()=> {
-    console.log("API CALL-" + searchQuery);
+    // console.log("API CALL-" + searchQuery);
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery)
     const json = await data.json();
-    console.log(json[1]);
+    // console.log(json[1]);
     setSuggestions(json[1])
 
     //update cache

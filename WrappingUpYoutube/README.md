@@ -29,4 +29,11 @@ here we exeuting the javascript libary create-react-app
 
 #### setup Tailwind
 
-- 
+- Live chat >>> Infinite scroll >>>>>>>>> pagination
+
+- challenage of live chat
+ - data layer == Get Data Live
+ - uI layer == update the ui
+
+ Data(live) ==> 1> web socket(bydirectional live data)(trading)
+ 2> API polling(gmail)
