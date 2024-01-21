@@ -1,3 +1,2 @@
 useNavigate() may be used only in the content of a <Router> component
-
-   bez we using this outside approuter provider
+bez we using this outside approuter provider so best place to put is header
